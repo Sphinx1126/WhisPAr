@@ -13,15 +13,16 @@ In this paper, we conducted experiments on three fine-grained tasks in total, in
 + Due to file size, the divided training set, test set, and validation set will be uploaded later.  
 + You can also experiment on your own dataset after splitting it into training set, test set and validation set, and putting the files under the directory `./data/XXX/`. Audio files in various formats (`.mp3`, `.wav`, `.ogg`, etc.) are supported, but the data should be organized as follows:
 
+```
     ─data  
       ├─test  
       │  ├─0  
-	  │  │	audio-0-0.mp3  
-	  │  │	audio-0-1.mp3  
-	  │  │	...  
+      │  │  audio-0-0.mp3  
+      │  │  audio-0-1.mp3  
+      │  │  ...  
       │  ├─1  
-	  │  │	audio-1-0.mp3  
-	  │  │	...  
+      │  │  audio-1-0.mp3  
+      │  │  ...  
       │  ├─2  
       │  └─...  
       │  
@@ -29,7 +30,8 @@ In this paper, we conducted experiments on three fine-grained tasks in total, in
       │  └─...  
       │  
       └─valid  
-    
+          └─...  
+```
 ## Running
 1. Install the requirements from the `./requirements.txt`
 2. Run the `./01_preprocess.py` to convert the audio sample to log-Mel spectrograms and store it as a `.pkl` file.
