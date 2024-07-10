@@ -13,7 +13,7 @@ import pickle
 
 def set_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', default=r'data/COG',type=str)
+    parser.add_argument('--data_dir', default=r'data/COG/',type=str)
     parser.add_argument('--output_dir', default=r'datasets/',type=str)
     parser.add_argument('--cls_num', default=6,type=int)
     parser.add_argument('--audio_len', default=30,type=int)
@@ -47,7 +47,10 @@ def write_data(data_dir,output_dir,cls_num,mode):
 
 if __name__ == '__main__':
     args = set_args()
-    
+
+    if not os.path.exists(args.output_dir):
+        os.makedirs(args.output_dir)
+        
     write_data(args.data_dir,args.output_dir, args.cls_num, 'train')
     write_data(args.data_dir,args.output_dir, args.cls_num, 'valid')
     write_data(args.data_dir,args.output_dir, args.cls_num, 'test')
