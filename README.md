@@ -29,7 +29,6 @@ In this paper, we conducted experiments on three fine-grained tasks in total, in
       │  └─...  
       │  
       └─valid  
-          └─...  
     
 ## Running
 1. Install the requirements from the `./requirements.txt`
