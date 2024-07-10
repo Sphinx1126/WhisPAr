@@ -10,7 +10,7 @@ In this paper, we conducted experiments on three fine-grained tasks in total, in
 + COG (`./datasets/COG`) is a Chinese Opera Genre Data Set (COG) collected in a pre-experimental stage, which contains 12,000 samples evenly distributed across 6 opera genres.  
 + [Audio Emotions](https://www.kaggle.com/datasets/uldisvalainis/audio-emotions/) (`./data/Emotions`) integrates data from 4 datasets commonly used in audio sentiment analysis researches, including RAVDESS, CREMA-D, SAVEE, and TESS, for a total of 7 sentiment categories and 12,798 samples.  
 + [BirdCLEF 2022](https://www.kaggle.com/competitions/birdclef-2022/) (`./data/Bird`) is derived from the Cornell Lab of Ornithology competition held on the Kaggle platform in 2022, and contains 152 bird classes with 14,657 samples.  
-+ Due to file size, the divided training set, test set, and validation set will be uploaded later.  
++ Due to file size, the divided training set, test set, and validation set can be downloaded [here](https://njuedu-my.sharepoint.cn/:f:/g/personal/522022140097_365_nju_edu_cn/EhOOW6q6GYNCpn6fTJS-hf0BZ2l20Ekmjn4LKR8dmQNtHw?e=aLmt3H).  
 + You can also experiment on your own dataset after splitting it into training set, test set and validation set, and putting the files under the directory `./data/XXX/`. Audio files in various formats (`.mp3`, `.wav`, `.ogg`, etc.) are supported, but the data should be organized as follows:
 
 ```
