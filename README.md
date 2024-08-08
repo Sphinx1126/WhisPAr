@@ -56,3 +56,21 @@ You may need to change the hyperparameters in `./01_preprocess.py`, `./02_train.
 + [https://github.com/openai/whisper](https://github.com/openai/whisper)  
 + [https://www.kaggle.com/datasets/uldisvalainis/audio-emotions](https://www.kaggle.com/datasets/uldisvalainis/audio-emotions/)  
 + [https://www.kaggle.com/competitions/birdclef-2022](https://www.kaggle.com/competitions/birdclef-2022/)  
+
+## Citation  
+If you find this work useful, please kindly consider citing the paper:  
+```
+@article{SHI2024112242,
+    title = {WhisPAr: Transferring pre-trained audio models to fine-grained classification via Prompt and Adapter},
+    journal = {Knowledge-Based Systems},
+    volume = {300},
+    pages = {112242},
+    year = {2024},
+    issn = {0950-7051},
+    doi = {https://doi.org/10.1016/j.knosys.2024.112242},
+    url = {https://www.sciencedirect.com/science/article/pii/S0950705124008761},
+    author = {Bin Shi and Hao Wang and Chenchen Lu and Meng Zhao},
+    keywords = {Audio classification, Transfer learning, Prompt paradigm, Adapter, Whisper},
+    abstract = {With the rise of Transformer as the backbone networks, pre-trained models have gradually become a hot spot in deep learning–related fields and play an important role in increasing research and production activities. However, current pre-trained models still have the problems of coarse knowledge granularity and poor zero/few-shot performance and cannot be well applied to fine-grained downstream tasks. In audio processing, considerable structure biases exist between the upstream and downstream tasks, making it difficult to realize cross-task transfer learning. Inspired by the success of Prompt and Adapter techniques in natural language processing (NLP) and computer vision (CV), we propose a cross-task transfer method with good generality to address these problems. We contribute the following: (1) a novel transfer method for audio pre-trained models via deep Prompt and Adapter structures to improve model adaptation to downstream tasks, which is effective and generally applicable and has potential to be used in more powerful audio pre-trained models in the future; (2) a fine-grained classification model implementation based on the abovementioned method WhisPAr, which is experimentally shown to outperform the baseline models in various fine-grained classification tasks (0.73 vs. 0.84, 0.76 vs. 0.81, and 0.47 vs. 0.68); and (3) an in-depth exploration of the mechanisms and laws of Prompt and Adapter. These contributions are expected to drive future research on audio processing and transfer learning, among others.}
+}
+```
