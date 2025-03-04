@@ -1,7 +1,6 @@
 torch>=1.6
 numpy>=1.16.0
 pandas>=0.24.0
-whisper
 tqdm
 tensorboardx
 pickle
