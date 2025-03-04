@@ -33,11 +33,15 @@ In this paper, we conducted experiments on three fine-grained tasks in total, in
           └─...  
 ```
 ## Running
-1. Install the requirements from the `./requirements.txt`
-2. Run the `./01_preprocess.py` to convert the audio sample to log-Mel spectrograms and store it as a `.pkl` file.
-3. Run the `./02_train.py` to train WhisPAr and evaluate it on the valid set.
-4. Run the `./03_test.py` to evaluate WhisPAr on the test set and save the results.
-5. You may need to change the hyperparameters if necessary.
+1. Download and install (or update to) the latest release of Whisper with the following command: 
+```
+pip install -U openai-whisper
+```
+2. Install the requirements from the `./requirements.txt`
+3. Run the `./01_preprocess.py` to convert the audio sample to log-Mel spectrograms and store it as a `.pkl` file.
+4. Run the `./02_train.py` to train WhisPAr and evaluate it on the valid set.
+5. Run the `./03_test.py` to evaluate WhisPAr on the test set and save the results.
+6. You may need to change the hyperparameters if necessary.
 
 ## Hyperparameters
 You may need to change the hyperparameters in `./01_preprocess.py`, `./02_train.py` and `./03_test.py` for best performance according to your tasks. And here comes the expression of some important hyperparameters.  
